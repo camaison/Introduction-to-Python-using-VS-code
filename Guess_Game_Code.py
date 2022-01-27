@@ -1,8 +1,8 @@
 import random     #Importing the random Module
-answer = random.randint(1, 15)     #assigning a single random value between 1 and 15 inclusive to the variable, answer
+answer = random.randint(1, 15)     #assigning a single random value between 1 and 15 inclusive to the variable answer
 tries = 0     #initializing the tries counter
 while tries < 5:     #loop runs as long as tries is not greater than or equal to 5
-    guess = int(input("Guess: "))   #requests a user to input a guess and converts that value from a string to integer before assigning to the variable guess
+    guess = int(input("Guess: "))   #requests a user to input a guess and converts that value from a string to an integer before assigning it to the variable guess
     if guess == answer:
         print("You win!")  #Prints "You win!" if the guess and answer are the same
         break     #Ends the loop when the condition is met
